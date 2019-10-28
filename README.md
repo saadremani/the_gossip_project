@@ -1,7 +1,8 @@
 # the_gossip_project
 
+-run in commandline from folder : - bundle install - rails db:create |rails db:migrate | rails db:seed - rails s
 
-
+http://localhost:3000/index
 
 Le projet
 
