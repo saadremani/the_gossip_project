@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+	
+  <body>
+    <h1>Page Potin !</h1>
+
+		<p>
+			<%="Voici la page du potin" %> <br/>
+				<br/>
+			<%="Titre : " + @gossip.title%><br/>
+				<br/>
+			<%="Contenu : " + @gossip.content%><br/>
+				<br/>
+			<%="Auteur : " + @gossip.user.first_name + " " +@gossip.user.last_name%><br/>
+				<br/>
+			<%="Date de création : " + @gossip.created_at.to_s%><br/>
+
+		</p>
+	</body>
+</html>
+	

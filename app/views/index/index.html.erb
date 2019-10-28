@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+
+    <h1>Mon super site de gossip !</h1>
+
+		<p>
+		<% gossip_array = Gossip.all %>
+		<% n=0 %>	
+		<% gossip_array.each do |g| %>	
+			<%= "Titre : " + g.title %>
+			</br>
+			<%= "Auteur : " +  g.user.first_name %> 
+			</br>
+			
+			<%= link_to "Afficher",show_path(n)%>	
+			<% n += 1 %>
+			</br>
+			</br>
+		<% end %>	
+		</p>
+		
+		<p>creer un potin</p>
+  </body>
+</html>
+
+
